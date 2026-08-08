@@ -1,4 +1,4 @@
-PROJECT 1: LRU CACHE IMPLEMENTATION
+Task 1: LRU CACHE IMPLEMENTATION
 Abstract
 
 The LRU Cache Implementation is an advanced C programming project developed to demonstrate efficient data storage and retrieval using a combination of a hash table and a doubly linked list. The system follows the Least Recently Used (LRU) cache replacement strategy, where the least recently accessed entry is automatically removed when the cache reaches its maximum capacity. The project focuses on practical implementation of data structures, pointers, dynamic memory allocation, and algorithmic efficiency.
