@@ -1,38 +1,45 @@
-# Project 1: LRU Cache Implementation
+PROJECT 1: LRU CACHE IMPLEMENTATION
+Abstract
 
-## Project Overview
+The LRU Cache Implementation is an advanced C programming project developed to demonstrate efficient data storage and retrieval using a combination of a hash table and a doubly linked list. The system follows the Least Recently Used (LRU) cache replacement strategy, where the least recently accessed entry is automatically removed when the cache reaches its maximum capacity. The project focuses on practical implementation of data structures, pointers, dynamic memory allocation, and algorithmic efficiency.
 
-This project is a menu-driven C application that implements a Least Recently Used (LRU) Cache. It uses a hash table for fast key-based lookup and a doubly linked list to maintain the order of recently accessed cache entries. The system automatically removes the least recently used item when the cache reaches its capacity.
+Introduction
 
-## Features
+Caching is an important technique used in computing systems to store frequently accessed information for faster retrieval. An LRU cache ensures that recently used information remains available while older unused information is removed when storage becomes limited.
 
-- Insert key-value pairs into the cache
-- Retrieve values using keys
-- Automatic LRU-based eviction
-- Delete cache entries
-- Display cache contents
-- Track cache hits and misses
-- Calculate cache hit ratio
-- Clear the cache
-- Dynamic memory management
-- Input validation and error handling
+This project implements an LRU cache completely in C without relying on built-in cache structures. A hash table provides efficient key-based searching, while a doubly linked list maintains the order of recently used entries.
 
-## Technologies Used
+Objectives
 
-- C
-- GCC
-- Hash Table
-- Doubly Linked List
-- Dynamic Memory Allocation
-- Git & GitHub
+The main objectives of the project are:
 
-## Files
+Implement an LRU cache using C.
+Apply hash table concepts for efficient searching.
+Implement a doubly linked list for usage tracking.
+Perform insertion, retrieval, updating, and deletion.
+Implement automatic LRU-based eviction.
+Track cache hits and misses.
+Calculate cache hit ratio.
+Practice pointers and dynamic memory management.
+Analyze the complexity of cache operations.
+Implementation
 
-- `project1_lru.c` – Main C program
-- `README.md` – Project documentation
+The cache stores key-value pairs and maintains two important positions: Most Recently Used (MRU) and Least Recently Used (LRU). Whenever an entry is accessed, it is moved to the front of the doubly linked list. When the cache becomes full, the node at the rear of the list is removed.
 
-## Run
+The hash table allows the program to locate entries efficiently using their keys. Combining these two structures allows the main cache operations to achieve O(1) average-time performance.
 
-```bash
-gcc project1_lru.c -o project1
-./project1
+Features
+
+The application provides options to insert and update entries, retrieve values, delete entries, display the current cache, view cache statistics, and clear the cache. It also records the total number of requests, successful cache hits, cache misses, and hit ratio.
+
+Applications
+
+LRU caching is commonly used in operating systems, web browsers, database systems, file systems, content delivery systems, and other applications where frequently accessed data needs to be retrieved efficiently.
+
+Conclusion
+
+The project provides practical experience in hash tables, doubly linked lists, pointers, dynamic memory allocation, and algorithmic complexity. It demonstrates how multiple data structures can be combined to develop an efficient real-world system.
+
+Author
+
+M. Ayshwarya
