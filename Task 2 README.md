@@ -1,4 +1,4 @@
-PROJECT 2: ROUTE OPTIMIZATION SYSTEM
+TASK 2: ROUTE OPTIMIZATION SYSTEM
 Abstract
 
 The Route Optimization System is an advanced C programming project developed to demonstrate graph-based problem solving and route analysis. The application represents a network using a weighted graph and implements Breadth-First Search (BFS), Depth-First Search (DFS), and Dijkstra's shortest-path algorithm. The project provides practical experience in graph representation, traversal, shortest-path computation, recursion, dynamic memory allocation, and algorithmic complexity.
